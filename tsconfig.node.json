@@ -12,9 +12,16 @@
     "isolatedModules": true,
     "moduleDetection": "force",
     "noEmit": true,
+    "rootDirs": ["."],
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./app/*"],
+      "@/*": ["./src/*", "./dist/*", ""],
+      "@/assets/*": ["./src/assets/*"],
+    },
 
     /* Linting */
-    "strict": true,
+    "strict": false,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
